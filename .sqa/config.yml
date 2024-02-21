@@ -1,0 +1,42 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/2.0.0
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/m-team-kit/mlflow-auth-gui:
+      branch: main
+      repo: https://github.com/m-team-kit/mlflow-auth-gui
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/m-team-kit/mlflow-auth-gui git:
+        commands:
+        - /usr/bin/env sh .sqa/script.boozy-rust-bordeaux.sh
+        container: qc.acc_gloppy-pink-lionfish
+  QC.Doc:
+    repos:
+      github.com/m-team-kit/mlflow-auth-gui find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.lanky-plum-pinscher.sh
+        container: qc.doc_stinky-amber-snail
+      github.com/m-team-kit/mlflow-auth-gui git:
+        commands:
+        - /usr/bin/env sh .sqa/script.silly-brass-buffalo.sh
+        container: qc.doc_foggy-persimmon-chihuahua
+  QC.Lic:
+    repos:
+      github.com/m-team-kit/mlflow-auth-gui licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.jumpy-magenta-coyote.sh
+        container: qc.lic_stealthy-corn-hippopotamus
+  QC.Ver:
+    repos:
+      github.com/m-team-kit/mlflow-auth-gui get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.sunny-buff-chicken.sh
+        container: qc.ver_greasy-emerald-cheetah
+timeout: 5400
