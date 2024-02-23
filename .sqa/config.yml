@@ -1,42 +1,42 @@
 config:
   credentials: []
   project_repos:
+    codebase.helmholtz.cloud/m-team/ai/mlflow-auth-gui:
+      branch: main
+      repo: https://codebase.helmholtz.cloud/m-team/ai/mlflow-auth-gui
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: feature/fair-epos-prototype
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
-    github.com/m-team-kit/mlflow-auth-gui:
-      branch: main
-      repo: https://github.com/m-team-kit/mlflow-auth-gui
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/m-team-kit/mlflow-auth-gui git:
+      codebase.helmholtz.cloud/m-team/ai/mlflow-auth-gui git:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-cyan-lionfish.sh
-        container: qc.acc_pretty-aqua-coati
+        - /usr/bin/env sh .sqa/script.stuffy-flax-jellyfish.sh
+        container: qc.acc_skanky-ivory-yak
   QC.Doc:
     repos:
-      github.com/m-team-kit/mlflow-auth-gui find_doc_files.py:
+      codebase.helmholtz.cloud/m-team/ai/mlflow-auth-gui find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-lavender-binturong.sh
-        container: qc.doc_wheezy-lemon-akbash
-      github.com/m-team-kit/mlflow-auth-gui git:
+        - /usr/bin/env sh .sqa/script.pretty-fuchsia-rabbit.sh
+        container: qc.doc_nerdy-amethyst-harrier
+      codebase.helmholtz.cloud/m-team/ai/mlflow-auth-gui git:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-sangria-rattlesnake.sh
-        container: qc.doc_scaly-amber-hyena
+        - /usr/bin/env sh .sqa/script.nippy-peach-havanese.sh
+        container: qc.doc_gamy-white-kiwi
   QC.Lic:
     repos:
-      github.com/m-team-kit/mlflow-auth-gui licensee:
+      codebase.helmholtz.cloud/m-team/ai/mlflow-auth-gui licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-peach-hound.sh
-        container: qc.lic_muzzy-harlequin-greyhound
+        - /usr/bin/env sh .sqa/script.shaggy-sapphire-cat.sh
+        container: qc.lic_shaky-viridian-mandrill
   QC.Ver:
     repos:
-      github.com/m-team-kit/mlflow-auth-gui get_git_tags.py:
+      codebase.helmholtz.cloud/m-team/ai/mlflow-auth-gui get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-saffron-forest.sh
-        container: qc.ver_goopy-smalt-dormouse
+        - /usr/bin/env sh .sqa/script.randy-carmine-meerkat.sh
+        container: qc.ver_cozy-amaranth-stoat
 timeout: 5400
