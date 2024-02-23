@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.0.0
+      branch: feature/fair-epos-prototype
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/m-team-kit/mlflow-auth-gui:
       branch: main
@@ -15,28 +15,28 @@ sqa_criteria:
     repos:
       github.com/m-team-kit/mlflow-auth-gui git:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-chocolate-bordeaux.sh
-        container: qc.acc_nerdy-grey-seahorse
+        - /usr/bin/env sh .sqa/script.queasy-khaki-toad.sh
+        container: qc.acc_cranky-aqua-turkey
   QC.Doc:
     repos:
       github.com/m-team-kit/mlflow-auth-gui find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-corn-setter.sh
-        container: qc.doc_chewy-dandelion-markhor
+        - /usr/bin/env sh .sqa/script.tasty-vermilion-opossum.sh
+        container: qc.doc_lovely-burgundy-heron
       github.com/m-team-kit/mlflow-auth-gui git:
         commands:
-        - /usr/bin/env sh .sqa/script.jumpy-indigo-robin.sh
-        container: qc.doc_snazzy-firebrick-hornet
+        - /usr/bin/env sh .sqa/script.jumpy-cerise-dachshund.sh
+        container: qc.doc_scummy-taupe-indri
   QC.Lic:
     repos:
       github.com/m-team-kit/mlflow-auth-gui licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-brown-sloth.sh
-        container: qc.lic_foggy-cobalt-mau
+        - /usr/bin/env sh .sqa/script.nippy-crimson-anteater.sh
+        container: qc.lic_zippy-chocolate-chicken
   QC.Ver:
     repos:
       github.com/m-team-kit/mlflow-auth-gui get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-salmon-quokka.sh
-        container: qc.ver_fuzzy-jade-chamois
+        - /usr/bin/env sh .sqa/script.dorky-gamboge-goose.sh
+        container: qc.ver_whiny-heliotrope-maltese
 timeout: 5400
