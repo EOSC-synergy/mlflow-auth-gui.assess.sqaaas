@@ -15,28 +15,28 @@ sqa_criteria:
     repos:
       codebase.helmholtz.cloud/m-team/ai/mlflow-auth-gui git:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-flax-jellyfish.sh
-        container: qc.acc_skanky-ivory-yak
+        - /usr/bin/env sh .sqa/script.greasy-scarlet-chipmunk.sh
+        container: qc.acc_woolly-ruby-eel
   QC.Doc:
     repos:
       codebase.helmholtz.cloud/m-team/ai/mlflow-auth-gui find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-fuchsia-rabbit.sh
-        container: qc.doc_nerdy-amethyst-harrier
+        - /usr/bin/env sh .sqa/script.pasty-cinnamon-chin.sh
+        container: qc.doc_wimpy-red-lizard
       codebase.helmholtz.cloud/m-team/ai/mlflow-auth-gui git:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-peach-havanese.sh
-        container: qc.doc_gamy-white-kiwi
+        - /usr/bin/env sh .sqa/script.baggy-violet-havanese.sh
+        container: qc.doc_wiggy-green-booby
   QC.Lic:
     repos:
       codebase.helmholtz.cloud/m-team/ai/mlflow-auth-gui licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-sapphire-cat.sh
-        container: qc.lic_shaky-viridian-mandrill
+        - /usr/bin/env sh .sqa/script.breezy-copper-fousek.sh
+        container: qc.lic_flimsy-pear-spoonbill
   QC.Ver:
     repos:
       codebase.helmholtz.cloud/m-team/ai/mlflow-auth-gui get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-carmine-meerkat.sh
-        container: qc.ver_cozy-amaranth-stoat
+        - /usr/bin/env sh .sqa/script.tasty-amber-bonobo.sh
+        container: qc.ver_tacky-rose-woodpecker
 timeout: 5400
