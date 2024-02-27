@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd codebase.helmholtz.cloud/m-team/ai/mlflow-auth-gui &&
-    licensee detect . --confidence 60 --json
+cd github.com/m-team-kit/mlflow-auth-gui &&
+    hadolint backend/Dockerfile backup_db/Dockerfile frontend/Dockerfile --failure-threshold error
 )

@@ -1,66 +1,66 @@
 config:
   credentials: []
   project_repos:
-    codebase.helmholtz.cloud/m-team/ai/mlflow-auth-gui:
-      branch: main
-      repo: https://codebase.helmholtz.cloud/m-team/ai/mlflow-auth-gui
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: feature/fair-epos-prototype
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/m-team-kit/mlflow-auth-gui:
+      branch: main
+      repo: https://github.com/m-team-kit/mlflow-auth-gui
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      codebase.helmholtz.cloud/m-team/ai/mlflow-auth-gui git:
+      github.com/m-team-kit/mlflow-auth-gui git:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-malachite-magpie.sh
-        container: qc.acc_snippy-aquamarine-spaniel
+        - /usr/bin/env sh .sqa/script.muzzy-puce-grouse.sh
+        container: qc.acc_breezy-chartreuse-macaque
   QC.Doc:
     repos:
-      codebase.helmholtz.cloud/m-team/ai/mlflow-auth-gui find_doc_files.py:
+      github.com/m-team-kit/mlflow-auth-gui find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-smalt-mandrill.sh
-        container: qc.doc_crappy-turquoise-dunker
-      codebase.helmholtz.cloud/m-team/ai/mlflow-auth-gui git:
+        - /usr/bin/env sh .sqa/script.tasty-malachite-buffalo.sh
+        container: qc.doc_queasy-maroon-ant
+      github.com/m-team-kit/mlflow-auth-gui git:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-ecru-cockroach.sh
-        container: qc.doc_shabby-gamboge-akita
-      codebase.helmholtz.cloud/m-team/ai/mlflow-auth-gui markdownlint:
+        - /usr/bin/env sh .sqa/script.gamy-amethyst-woodlouse.sh
+        container: qc.doc_nippy-mustard-dhole
+      github.com/m-team-kit/mlflow-auth-gui markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-denim-crab.sh
-        container: qc.doc_wiggy-auburn-lemur
+        - /usr/bin/env sh .sqa/script.flabby-gamboge-camel.sh
+        container: qc.doc_woolly-asparagus-opossum
   QC.Lic:
     repos:
-      codebase.helmholtz.cloud/m-team/ai/mlflow-auth-gui licensee:
+      github.com/m-team-kit/mlflow-auth-gui licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-cornflower-toucan.sh
-        container: qc.lic_dorky-aquamarine-hyena
+        - /usr/bin/env sh .sqa/script.clammy-fuchsia-rabbit.sh
+        container: qc.lic_scaly-zucchini-argentino
   QC.Met:
     repos:
-      codebase.helmholtz.cloud/m-team/ai/mlflow-auth-gui cff-converter-python:
+      github.com/m-team-kit/mlflow-auth-gui cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-alizarin-frigatebird.sh
-        container: qc.met_hazy-tan-gopher
-      codebase.helmholtz.cloud/m-team/ai/mlflow-auth-gui validate_codemeta:
+        - /usr/bin/env sh .sqa/script.muggy-persimmon-swan.sh
+        container: qc.met_ugly-seashell-centipede
+      github.com/m-team-kit/mlflow-auth-gui validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-saffron-woodlouse.sh
-        container: qc.met_muzzy-asparagus-snake
+        - /usr/bin/env sh .sqa/script.surly-burgundy-sloth.sh
+        container: qc.met_pokey-pink-llama
   QC.Sty:
     repos:
-      codebase.helmholtz.cloud/m-team/ai/mlflow-auth-gui hadolint:
+      github.com/m-team-kit/mlflow-auth-gui hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-cornflower-starfish.sh
-        container: qc.sty_flaky-platinum-dollar
-      codebase.helmholtz.cloud/m-team/ai/mlflow-auth-gui jsonlint:
+        - /usr/bin/env sh .sqa/script.homely-maroon-dunker.sh
+        container: qc.sty_cloudy-lime-crane
+      github.com/m-team-kit/mlflow-auth-gui jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-tan-tang.sh
-        container: qc.sty_clammy-peach-raccoon
+        - /usr/bin/env sh .sqa/script.chummy-chartreuse-fowl.sh
+        container: qc.sty_wiggy-teal-chameleon
   QC.Ver:
     repos:
-      codebase.helmholtz.cloud/m-team/ai/mlflow-auth-gui get_git_tags.py:
+      github.com/m-team-kit/mlflow-auth-gui get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-harlequin-squirrel.sh
-        container: qc.ver_trippy-cobalt-toucan
+        - /usr/bin/env sh .sqa/script.stinky-aquamarine-anteater.sh
+        container: qc.ver_wimpy-sapphire-chamois
 timeout: 5400

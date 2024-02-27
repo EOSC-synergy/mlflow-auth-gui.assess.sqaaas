@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd codebase.helmholtz.cloud/m-team/ai/mlflow-auth-gui &&
-    cat codemeta.json
+cd github.com/m-team-kit/mlflow-auth-gui &&
+    jsonlint-cli "**/*.json"
 )
