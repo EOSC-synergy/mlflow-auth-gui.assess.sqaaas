@@ -4,9 +4,6 @@ config:
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: main
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
-    github.com/ai4os/ai4-docs:
-      branch: master
-      repo: https://github.com/ai4os/ai4-docs
     github.com/m-team-kit/mlflow-auth-gui:
       branch: main
       repo: https://github.com/m-team-kit/mlflow-auth-gui
@@ -18,56 +15,52 @@ sqa_criteria:
     repos:
       github.com/m-team-kit/mlflow-auth-gui git:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-maroon-molly.sh
-        container: qc.acc_gummy-yellow-axolotl
+        - /usr/bin/env sh .sqa/script.wheezy-indigo-numbat.sh
+        container: qc.acc_cranky-persimmon-clam
   QC.Doc:
     repos:
-      github.com/ai4os/ai4-docs find_doc_files.py:
+      github.com/m-team-kit/mlflow-auth-gui find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-black-kudu.sh
-        container: qc.doc_sunny-cinnamon-sheepdog
-      github.com/ai4os/ai4-docs git:
+        - /usr/bin/env sh .sqa/script.woozy-cardinal-uakari.sh
+        container: qc.doc_shabby-plum-lobster
+      github.com/m-team-kit/mlflow-auth-gui git:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-gold-setter.sh
-        container: qc.doc_chummy-cobalt-alligator
-      github.com/ai4os/ai4-docs markdownlint:
+        - /usr/bin/env sh .sqa/script.clammy-amethyst-tarsier.sh
+        container: qc.doc_snoopy-cinnabar-chinook
+      github.com/m-team-kit/mlflow-auth-gui markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-viridian-crane.sh
-        container: qc.doc_breezy-persimmon-monster
-      github.com/ai4os/ai4-docs restructuredtext-lint:
-        commands:
-        - /usr/bin/env sh .sqa/script.wimpy-turquoise-blue.sh
-        container: qc.doc_skinny-orange-slug
+        - /usr/bin/env sh .sqa/script.boozy-heliotrope-eleuth.sh
+        container: qc.doc_flimsy-linen-dodo
   QC.Lic:
     repos:
       github.com/m-team-kit/mlflow-auth-gui licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-orchid-reindeer.sh
-        container: qc.lic_homey-brass-mau
+        - /usr/bin/env sh .sqa/script.fuzzy-orchid-mandrill.sh
+        container: qc.lic_snappy-brown-sloth
   QC.Met:
     repos:
       github.com/m-team-kit/mlflow-auth-gui cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-pear-gibbon.sh
-        container: qc.met_sloppy-cornflower-stoat
+        - /usr/bin/env sh .sqa/script.scummy-alizarin-gar.sh
+        container: qc.met_frumpy-silver-olm
       github.com/m-team-kit/mlflow-auth-gui validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-sangria-deer.sh
-        container: qc.met_sleepy-magenta-ladybird
+        - /usr/bin/env sh .sqa/script.flaky-khaki-jellyfish.sh
+        container: qc.met_flaky-myrtle-fly
   QC.Sty:
     repos:
       github.com/m-team-kit/mlflow-auth-gui hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-maroon-chow.sh
-        container: qc.sty_whiny-tomato-caracal
+        - /usr/bin/env sh .sqa/script.dorky-lilac-barnacle.sh
+        container: qc.sty_hazy-teal-uakari
       github.com/m-team-kit/mlflow-auth-gui jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-bistre-pinscher.sh
-        container: qc.sty_leaky-orchid-bracke
+        - /usr/bin/env sh .sqa/script.wiggy-teal-malamute.sh
+        container: qc.sty_slaphappy-carmine-bongo
   QC.Ver:
     repos:
       github.com/m-team-kit/mlflow-auth-gui get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-burgundy-lynx.sh
-        container: qc.ver_flimsy-peach-cow
+        - /usr/bin/env sh .sqa/script.gloppy-burgundy-foxhound.sh
+        container: qc.ver_scaly-peach-dingo
 timeout: 5400

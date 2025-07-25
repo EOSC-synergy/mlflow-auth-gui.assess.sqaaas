@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/ai4os/ai4-docs &&
-    rst-lint --level warning --format json .
+cd github.com/m-team-kit/mlflow-auth-gui &&
+    find_doc_files.py --file_type all
 )
