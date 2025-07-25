@@ -18,56 +18,56 @@ sqa_criteria:
     repos:
       github.com/m-team-kit/mlflow-auth-gui git:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-lilac-molly.sh
-        container: qc.acc_scummy-cinnabar-alligator
+        - /usr/bin/env sh .sqa/script.hilly-maroon-molly.sh
+        container: qc.acc_gummy-yellow-axolotl
   QC.Doc:
     repos:
       github.com/ai4os/ai4-docs find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-carmine-seal.sh
-        container: qc.doc_slimy-chocolate-oyster
+        - /usr/bin/env sh .sqa/script.boozy-black-kudu.sh
+        container: qc.doc_sunny-cinnamon-sheepdog
       github.com/ai4os/ai4-docs git:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-zucchini-indri.sh
-        container: qc.doc_tasty-zucchini-leopard
+        - /usr/bin/env sh .sqa/script.zippy-gold-setter.sh
+        container: qc.doc_chummy-cobalt-alligator
       github.com/ai4os/ai4-docs markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-lemon-ibis.sh
-        container: qc.doc_lovely-pink-ray
+        - /usr/bin/env sh .sqa/script.slaphappy-viridian-crane.sh
+        container: qc.doc_breezy-persimmon-monster
       github.com/ai4os/ai4-docs restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-fuchsia-balinese.sh
-        container: qc.doc_sickly-goldenrod-swan
+        - /usr/bin/env sh .sqa/script.wimpy-turquoise-blue.sh
+        container: qc.doc_skinny-orange-slug
   QC.Lic:
     repos:
       github.com/m-team-kit/mlflow-auth-gui licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-teal-retriever.sh
-        container: qc.lic_wiggy-silver-fossa
+        - /usr/bin/env sh .sqa/script.woozy-orchid-reindeer.sh
+        container: qc.lic_homey-brass-mau
   QC.Met:
     repos:
       github.com/m-team-kit/mlflow-auth-gui cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-russet-bird.sh
-        container: qc.met_shaggy-white-fousek
+        - /usr/bin/env sh .sqa/script.greasy-pear-gibbon.sh
+        container: qc.met_sloppy-cornflower-stoat
       github.com/m-team-kit/mlflow-auth-gui validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-burgundy-iguana.sh
-        container: qc.met_beady-aqua-meerkat
+        - /usr/bin/env sh .sqa/script.homey-sangria-deer.sh
+        container: qc.met_sleepy-magenta-ladybird
   QC.Sty:
     repos:
       github.com/m-team-kit/mlflow-auth-gui hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-sapphire-fowl.sh
-        container: qc.sty_ready-bronze-mandrill
+        - /usr/bin/env sh .sqa/script.woozy-maroon-chow.sh
+        container: qc.sty_whiny-tomato-caracal
       github.com/m-team-kit/mlflow-auth-gui jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-chestnut-sparrow.sh
-        container: qc.sty_droopy-teal-tarsier
+        - /usr/bin/env sh .sqa/script.stuffy-bistre-pinscher.sh
+        container: qc.sty_leaky-orchid-bracke
   QC.Ver:
     repos:
       github.com/m-team-kit/mlflow-auth-gui get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-harlequin-abyssinian.sh
-        container: qc.ver_slaphappy-green-spider
+        - /usr/bin/env sh .sqa/script.crabby-burgundy-lynx.sh
+        container: qc.ver_flimsy-peach-cow
 timeout: 5400
