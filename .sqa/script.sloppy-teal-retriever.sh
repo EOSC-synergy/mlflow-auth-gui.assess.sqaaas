@@ -5,5 +5,5 @@
 
 (
 cd github.com/m-team-kit/mlflow-auth-gui &&
-    licensee detect . --confidence 60 --json
+    licensee detect . --confidence 60 --json 
 )

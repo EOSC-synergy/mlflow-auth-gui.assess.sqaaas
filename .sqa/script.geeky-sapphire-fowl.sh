@@ -5,5 +5,5 @@
 
 (
 cd github.com/m-team-kit/mlflow-auth-gui &&
-    hadolint backend/Dockerfile backup_db/Dockerfile frontend/Dockerfile --failure-threshold error
+    hadolint backup_db/Dockerfile signup/Dockerfile mlflow/Dockerfile --failure-threshold error
 )

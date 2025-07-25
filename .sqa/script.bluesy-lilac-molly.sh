@@ -5,5 +5,5 @@
 
 (
 cd github.com/m-team-kit/mlflow-auth-gui &&
-    git rev-parse --is-inside-work-tree
+    git rev-parse --is-inside-work-tree 
 )
